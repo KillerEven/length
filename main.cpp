@@ -35,7 +35,7 @@ int main()
 		if(line.length()==0)break;
 		line.copy(lineC,line.length(),0);
 		sscanf(lineC,"%lf %s %s %lf %s",&nmA,unA,tmp,&nmB,unB);
-		strcat(unGroup[k].name,unA);
+		strcpy(unGroup[k].name,unA);
 		unGroup[k].num=nmB/nmA;
 		k++;
 	}
