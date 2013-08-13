@@ -10,13 +10,14 @@ using namespace std;
 
 typedef struct unit
 {
-  char name[20];//unit name
+	char name[20];//unit name
 	double num;//1 unit equals num m
 }UN;
 
 int k=1;
 UN unGroup[100]={{"m",1}};//unit group
 
+int cmp(char a[],char b[]);
 double search(char un[]);
 
 int main()
